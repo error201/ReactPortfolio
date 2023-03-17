@@ -1,10 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import resume from '../images/resume.docx'
 
 
-export default function Resume (props) {
-    return(
+export default function Resume() {
+    return (
         <div>
-            <h3>This is the resume page.</h3>
+            <Link to={resume} target="_blank"><h1>Download my resume</h1></Link>
         </div>
     )
 };
