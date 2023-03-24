@@ -1,10 +1,24 @@
 import React from 'react';
 
 
-export default function Portfolio (props) {
-    return(
-        <div>
-            <h3>This is the Portfolio page.</h3>
+export default function Portfolio({ projects }) {
+    return (
+        <div className="projects">
+            {projects.map((project) => (
+                <div className="card mx-auto" style={{ maxWidth: "50vw" }}>
+                    <div className="row g-0">
+                        <div className="col-md-4">
+                            <img src={project.src} className="img-fluid rounded-start" alt="..." />
+                        </div>
+                        <div className="col-md-8">
+                            <div className="card-body">
+                                <h5 className="card-title">{project.title}</h5>
+                                <p className="card-text">{project.blurb}</p>
+                                <p className="card-text"><small className="text-muted">Last updated 2022-03-21</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>))}
         </div>
     )
-};
+}

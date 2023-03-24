@@ -19,7 +19,6 @@ export default function Contact() {
 
     const handleFormSubmit = (e) => {
         e.preventDefault();
-        console.log("Submit button pressed!")
         setUserName('');
         setEmail('');
         setTextArea('');
