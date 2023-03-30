@@ -1,9 +1,9 @@
 const projects = [
     {
         title: "DoggieDates",
-        url: "",
+        url: "https://doggiedatesfrontend.herokuapp.com/",
         src: "",
-        blurb: "",
+        blurb: "A fun place for dog play-dates.",
     },
     {
         title: "Rent-A-Truck",

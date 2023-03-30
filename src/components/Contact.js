@@ -5,7 +5,6 @@ export default function Contact() {
     const [userName, setUserName] = useState('');
     const [email, setEmail] = useState('');
     const [textArea, setTextArea] = useState('');
-
     const handleInputChange = (e) => {
         const { name, value } = e.target;
         if (name==="userName"){
@@ -16,14 +15,12 @@ export default function Contact() {
             return setTextArea(value);
         }
     };
-
     const handleFormSubmit = (e) => {
         e.preventDefault();
         setUserName('');
         setEmail('');
         setTextArea('');
     };
-
     return (
         <div>
             <div className="mb-3">

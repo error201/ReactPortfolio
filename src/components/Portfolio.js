@@ -12,7 +12,7 @@ export default function Portfolio({ projects }) {
                         </div>
                         <div className="col-md-8">
                             <div className="card-body">
-                                <h5 className="card-title">{project.title}</h5>
+                                <h5 className="card-title"><a href={project.url} target="_blank">{project.title}</a></h5>
                                 <p className="card-text">{project.blurb}</p>
                                 <p className="card-text"><small className="text-muted">Last updated 2022-03-21</small></p>
                             </div>
