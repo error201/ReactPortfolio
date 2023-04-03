@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function About() {
     return (
-        <div className="card mx-auto" style={{ maxWidth: "50vw" }}>
+        <div className="card mx-auto" style={{ maxWidth: "70vw" }}>
             <div className="row g-0">
                 <div className="col-md-4">
                     <img src={require('../images/profile_pic.jpg')} className="img-fluid rounded-start" alt="The author." />
