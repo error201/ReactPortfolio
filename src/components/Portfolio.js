@@ -3,12 +3,12 @@ import React from 'react';
 
 export default function Portfolio({ projects }) {
     return (
-        <div className="projects">
+        <div className="projects d-flex flex-row flex-wrap">
             {projects.map((project) => (
-                <div className="card mx-auto" style={{ maxWidth: "30vw" }}>
+                <div className="card mx-auto" style={{ maxWidth: "40vw" }}>
                     <div className="row g-0">
                         <div className="col-md-4">
-                            <img src={project.src} className="img-fluid rounded-start" alt={project.alt} />
+                            <img src={project.src} className="img-fluid rounded-start object-fit-cover" alt={project.alt} />
                         </div>
                         <div className="col-md-8">
                             <div className="card-body">
