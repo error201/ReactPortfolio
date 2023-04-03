@@ -5,7 +5,7 @@ export default function Portfolio({ projects }) {
     return (
         <div className="projects">
             {projects.map((project) => (
-                <div className="card mx-auto" style={{ maxWidth: "50vw" }}>
+                <div className="card mx-auto" style={{ maxWidth: "30vw" }}>
                     <div className="row g-0">
                         <div className="col-md-4">
                             <img src={project.src} className="img-fluid rounded-start" alt={project.alt} />
